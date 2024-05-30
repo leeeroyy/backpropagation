@@ -11,4 +11,4 @@ def backward(self, dout):
     self.db = np.sum(dout, axis=0)
     return dx
 ```
-The `pdf` details the mathematical derivations of the above implemented formulas. 
+The `.pdf` details the mathematical derivations of the above implemented formulas. 
