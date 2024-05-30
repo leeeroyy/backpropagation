@@ -12,3 +12,8 @@ def backward(self, dout):
     return dx
 ```
 The `.pdf` details the mathematical derivations of the above implemented formulas. 
+
+## Usage 
+
+```bash
+git clone https://github.com/leeeroyy/backpropagation.git
