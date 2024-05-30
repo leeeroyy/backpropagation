@@ -3,7 +3,7 @@
 This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks.
 
 ## Content 
-An affine linear layer takes as input a matrix $X \in \mathbb{R}^{N \times D}$ and produces an output $XW + b$ where $W \in \mathbb{R}^{D \times M}$ is the weight matrix and $b \in \mathbb{R}^{1 \times M}$ is a bias vector. To optimize the parameters of the affine linear layer and the layers prior to the affine layer, the partial derivatives of the loss function $L$ w.r.t. the parameters of the affine layer and its input need to be determined. A Python function implementing the backward pass of an affine linear layer may look as follows:
+An affine linear layer takes as input a matrix $X \in \mathbb{R}^{N \times D}$ and produces an output $XW + B$ where $W \in \mathbb{R}^{D \times M}$ is the weight matrix and $B \in \mathbb{R}^{N \times M}$ is a bias matrix containing $N$ equal rows $b \in \mathbb{R}^{1 \times M}$. To optimize the parameters of the affine linear layer and the layers prior to the affine layer, the partial derivatives of the loss function $L$ w.r.t. the parameters of the affine layer and its input need to be determined. A Python function implementing the backward pass of an affine linear layer may look as follows:
 ```python
 def backward(self, dout):
     dx = np.dot(dout, self.W.T)
