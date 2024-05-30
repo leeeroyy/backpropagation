@@ -1,6 +1,9 @@
 # Backpropagation through an Affine Linear Layer
 
-This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. An affine linear layer takes as input a matrix $X \in \mathbb{R}^{n}$
+This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks.
+
+## Content 
+An affine linear layer takes as input a matrix $X \in \mathbb{R}^{N \times D}$ and produces an output $XW + b$ where $W \in \mathbb{R}^{D \times M}$ is the weight matrix and $b \in \mathbb{R}^{1 \times M}$ is a bias vector.
 A Python function implementing the backward pass of an affine linear layer may look as follows:
 ```python
 def backward(self, dout):
@@ -32,8 +35,6 @@ The LaTeX document, `backpropagation_affine_layer.tex`, covers the following top
     \frac{\partial L}{\partial \mathbf{b}} = \mathbf{1}^T \frac{\partial L}{\partial \mathbf{Y}}
     \]
 
-- **Python Implementation Example**:
-  - 
 
 ## Usage
 
