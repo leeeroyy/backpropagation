@@ -1,6 +1,6 @@
 # Backpropagation through an Affine Linear Layer
 
-This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. An affine linear layer takes as input a matrix $X$
+This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. An affine linear layer takes as input a matrix $X \in \mathbb{R}$
 A Python function implementing the backward pass of an affine linear layer may look as follows:
 ```python
 def backward(self, dout):
