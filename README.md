@@ -2,15 +2,9 @@
 
 This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. The following formulas are derived in the work:
 ```math
-    \[
-    \frac{\partial L}{\partial \mathbf{X}} = \frac{\partial L}{\partial \mathbf{Y}} \mathbf{W}^T
-    \]
-    \[
-    \frac{\partial L}{\partial \mathbf{W}} = \mathbf{X}^T \frac{\partial L}{\partial \mathbf{Y}}
-    \]
-    \[
+    \frac{\partial L}{\partial \mathbf{X}} = \frac{\partial L}{\partial \mathbf{Y}} \mathbf{W}^T \\
+    \frac{\partial L}{\partial \mathbf{W}} = \mathbf{X}^T \frac{\partial L}{\partial \mathbf{Y}} \\
     \frac{\partial L}{\partial \mathbf{b}} = \mathbf{1}^T \frac{\partial L}{\partial \mathbf{Y}}
-    \]
 ```
 
 A Python function demonstrating the backward pass method of an affine linear layer:
