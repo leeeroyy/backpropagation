@@ -1,6 +1,25 @@
 # Backpropagation through an Affine Linear Layer
 
-This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks.
+This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. The formulas derived in the work
+´´´math
+    \[
+    \frac{\partial L}{\partial \mathbf{X}} = \frac{\partial L}{\partial \mathbf{Y}} \mathbf{W}^T
+    \]
+    \[
+    \frac{\partial L}{\partial \mathbf{W}} = \mathbf{X}^T \frac{\partial L}{\partial \mathbf{Y}}
+    \]
+    \[
+    \frac{\partial L}{\partial \mathbf{b}} = \mathbf{1}^T \frac{\partial L}{\partial \mathbf{Y}}
+    \]
+´´´math
+A Python function demonstrating the backward pass method of an affine linear layer:
+    ```python
+    def backward(self, dout):
+        dx = np.dot(dout, self.W.T)
+        self.dW = np.dot(self.x.T, dout) 
+        self.db = np.sum(dout, axis=0)
+        return dx
+    ```
 
 ## Content
 
@@ -25,14 +44,7 @@ The LaTeX document, `backpropagation_affine_layer.tex`, covers the following top
     \]
 
 - **Python Implementation Example**:
-  - A Python function demonstrating the backward pass method of an affine linear layer:
-    ```python
-    def backward(self, dout):
-        dx = np.dot(dout, self.W.T)
-        self.dW = np.dot(self.x.T, dout) 
-        self.db = np.sum(dout, axis=0)
-        return dx
-    ```
+  - 
 
 ## Usage
 
