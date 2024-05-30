@@ -1,10 +1,10 @@
 # Backpropagation through an Affine Linear Layer
 
-This repository contains a LaTeX document that explains the process of backpropagation through an affine linear layer in neural networks. The document details the derivation of parameter update formulas and provides an implementation example in Python.
+This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks.
 
 ## Content
 
-### LaTeX Document
+### Pdf Document
 
 The LaTeX document, `backpropagation_affine_layer.tex`, covers the following topics:
 
