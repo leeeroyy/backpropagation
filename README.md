@@ -2,8 +2,21 @@
 
 This repository contains a .pdf document that explains the process of backpropagation through an affine linear layer in neural networks. 
 
+In programming languages like python, the derived formulas can be used to implement a backward pass method which m
+
+
+
 ## Content
+
+
 The following formulas are derived in the work:
+    ```python
+    def backward(self, dout):
+        dx = np.dot(dout, self.W.T)
+        self.dW = np.dot(self.x.T, dout) 
+        self.db = np.sum(dout, axis=0)
+        return dx
+    ```
 
 - ```math
     \frac{\partial L}{\partial \mathbf{X}} = \frac{\partial L}{\partial \mathbf{Y}} \mathbf{W}^T \\
@@ -14,14 +27,7 @@ The following formulas are derived in the work:
 - ```math 
     \frac{\partial L}{\partial \mathbf{b}} = \mathbf{1}^T \frac{\partial L}{\partial \mathbf{Y}}
   ```
-A Python function demonstrating the backward pass method of an affine linear layer:
-    ```python
-    def backward(self, dout):
-        dx = np.dot(dout, self.W.T)
-        self.dW = np.dot(self.x.T, dout) 
-        self.db = np.sum(dout, axis=0)
-        return dx
-    ```
+A Python function implementing the backward pass of an affine linear layer may look as follows
 
 ## Content
 
