@@ -15,7 +15,7 @@ The `.pdf` details the mathematical derivations of the above implemented formula
 
 ## Usage 
 
-Copy and paste the following command in your terminal.
+Make sure you have [Git](https://git-scm.com/downloads) installed, then copy and paste the following command in your terminal to copy the contents in your current working directory.
 
 ```bash
 git clone https://github.com/leeeroyy/backpropagation.git
